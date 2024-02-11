@@ -21,7 +21,8 @@ import { ConfigModule } from '@nestjs/config';
       }),
     }),
     ConfigModule.forRoot({
-      isGlobal: true
+      isGlobal: true,
+      envFilePath: '.local.env',
     }),
     AdminModule
   ],
